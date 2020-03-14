@@ -33,4 +33,5 @@ const onetoone = (first, second) => {
     return true;
 }
 
-console.log(onetoone('abc', 'xyz'));
+const args = process.argv.slice(2);
+console.log(onetoone(args[0], args[1]));
